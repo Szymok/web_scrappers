@@ -49,4 +49,5 @@ for url in urls:
         except(NoSuchElementException, TimeoutException):
             print(f'Report {category} is not found')
             continue
-        break
+    xlwriter.save()
+browser.quit()
